@@ -1,15 +1,21 @@
+using Kata.Application;
+using Kata.Application.Order.Interfaces;
+using Kata.Infrastructure;
+using Kata.Infrastructure.Clients;
+using Kata.Persistence;
+
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
+builder.Services.AddInfrastructure();
+builder.Services.AddPersistence(builder.Configuration.GetConnectionString("DefaultConnection"));
+builder.Services.AddApplication();
 
-// Configure the HTTP request pipeline.
+builder.Services.AddHttpClient<IOrderHttpClient, OrderHttpClient>(c => { c.BaseAddress = new Uri(builder.Configuration["ApiSettings:Address"]); });
+
+var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -17,9 +23,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

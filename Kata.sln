@@ -1,9 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.8.34316.72
+VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata.Api", "Kata.Api\Kata.Api.csproj", "{503BA5C9-E10A-4BBC-A1D0-A3E6E6673B67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kata.Api", "Kata.Api\Kata.Api.csproj", "{49003C3F-9278-4DF5-A9A2-39DC00938924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata.Application", "Kata.Application\Kata.Application.csproj", "{E37326B8-18EC-476B-941E-E6EEF7138C5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata.Domain", "Kata.Domain\Kata.Domain.csproj", "{5A3DF880-5BFC-4A7E-ADEE-575FB9903827}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata.Infrastructure", "Kata.Infrastructure\Kata.Infrastructure.csproj", "{B290928A-8319-4ADA-853F-663216E97C94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata.Persistence", "Kata.Persistence\Kata.Persistence.csproj", "{29FB2A06-6620-4C98-988A-32718D79DE5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +19,31 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{503BA5C9-E10A-4BBC-A1D0-A3E6E6673B67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{503BA5C9-E10A-4BBC-A1D0-A3E6E6673B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{503BA5C9-E10A-4BBC-A1D0-A3E6E6673B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{503BA5C9-E10A-4BBC-A1D0-A3E6E6673B67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49003C3F-9278-4DF5-A9A2-39DC00938924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49003C3F-9278-4DF5-A9A2-39DC00938924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49003C3F-9278-4DF5-A9A2-39DC00938924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49003C3F-9278-4DF5-A9A2-39DC00938924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E37326B8-18EC-476B-941E-E6EEF7138C5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E37326B8-18EC-476B-941E-E6EEF7138C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E37326B8-18EC-476B-941E-E6EEF7138C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E37326B8-18EC-476B-941E-E6EEF7138C5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A3DF880-5BFC-4A7E-ADEE-575FB9903827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A3DF880-5BFC-4A7E-ADEE-575FB9903827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A3DF880-5BFC-4A7E-ADEE-575FB9903827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A3DF880-5BFC-4A7E-ADEE-575FB9903827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B290928A-8319-4ADA-853F-663216E97C94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B290928A-8319-4ADA-853F-663216E97C94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B290928A-8319-4ADA-853F-663216E97C94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B290928A-8319-4ADA-853F-663216E97C94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29FB2A06-6620-4C98-988A-32718D79DE5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29FB2A06-6620-4C98-988A-32718D79DE5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29FB2A06-6620-4C98-988A-32718D79DE5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29FB2A06-6620-4C98-988A-32718D79DE5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C25CA6B9-BFA6-4DA3-A421-CA39FE826F6E}
+		SolutionGuid = {DBC915BB-DA68-44CB-95BC-A26833BCA65D}
 	EndGlobalSection
 EndGlobal

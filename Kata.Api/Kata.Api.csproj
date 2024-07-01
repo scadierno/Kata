@@ -4,11 +4,17 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <InvariantGlobalization>true</InvariantGlobalization>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.3.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kata.Application\Kata.Application.csproj" />
+    <ProjectReference Include="..\Kata.Infrastructure\Kata.Infrastructure.csproj" />
+    <ProjectReference Include="..\Kata.Persistence\Kata.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
